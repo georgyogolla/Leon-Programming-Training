@@ -5,6 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Leon Html Tutorial</title>
     <!-- <link rel="stylesheet" href="styles.css"> -->
+     <style>
+      table, th, td {
+        border: 1px solid red;
+        width: 50%;
+        /* height: 50vh; */
+      }
+     </style>
+     <!-- <script type="text/javascript">
+     </script> -->
 </head>
 <body style="background-color: rgb(0, 225, 255);">
     <!-- Block-level elements are those that structure the main part of your 
@@ -214,17 +223,24 @@ Inline elements are: <a>, <abbr>, <acronym>, <b>, <bdo>, <big>, <br>, <button>, 
   </li>
  </ul>
  <H3>HTML Tables</H3>
- <table style="width: 80%;">
+ <table>
   <tr>
-    <th>No</th>
+    <!-- If you want to show the heading in one cell, you can use the colspan attribute. -->
+    <th colspan="2">No</th>
     <th>Name</th>
     <th>Age</th>
     <th>Gender</th>
   </tr>
   <tr>
     <td>1</td>
-    <td>James</td>
+    <td rowspan="2">James</td>
     <td>20</td>
+    <td>Male</td>
+  </tr>
+    <tr>
+    <td>2</td>
+    <td>John</td>
+    <td>23</td>
     <td>Male</td>
   </tr>
  </table>
