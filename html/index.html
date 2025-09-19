@@ -311,7 +311,12 @@ Inline elements are: <a>, <abbr>, <acronym>, <b>, <bdo>, <big>, <br>, <button>, 
 <!-- In HTML5, we can embed audio files using the <audio> tag, and there is no need to connect third-party plugins. The audio element can be controlled with HTML or Javascript and styled with CSS. -->
 
 <!-- In the code, the src attribute refers to the URL of the audio file, and the controls attribute adds a control panel (launch button, scroll bar, volume regulator). -->
- <audio src="./audio/Lyric Video~ Whoopty Freestyle~ Nyashinski [3mcWmbOZBWE]-[AudioTrimmer.com].mp3" controls></audio>
+ <audio muted src="./audio/Lyric Video~ Whoopty Freestyle~ Nyashinski [3mcWmbOZBWE]-[AudioTrimmer.com].mp3" type="audio/mpeg"  controls autoplay></audio>
+ <!-- <audio src="https://youtu.be/DiuyxelIkAM?si=FAUYOFl3PkgWE2UM" controls></audio> -->
+  <h3>Using video tag in html</h3>
+  <video poster="https://images.pexels.com/photos/33894777/pexels-photo-33894777.jpeg"  src="https://www.pexels.com/download/video/32665221/" height="120" widht="120" type="video/mp4" controls autoplay autobuffer>
+    <track default kind="subtitles" srclang="en" src="/build/videos/arcnet.io(7-sec).mp4"></track>
+  </video>
 <!-- The <footer> element -->
 <!-- The <footer> element defines the footer of a web page or a section. 
   As a rule, it contains copyright information, contact details, navigation links, etc. -->
