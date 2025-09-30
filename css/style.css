@@ -1,0 +1,22 @@
+/* CSS Selectors  */
+/* elements
+class 
+id  */
+
+/* selector {
+    css properties
+} */
+
+
+h1 {
+color:red;
+}
+
+.blue {
+    color: blue;
+}
+
+#id-selector {
+    color: coral;
+}
+
