@@ -1,10 +1,16 @@
 /* CSS Selectors  */
-/* elements
+/* Type Selector (elements)
 class 
 id  */
 
 /* selector {
     css properties
+} */
+
+/* Universal Selector (*)  */
+
+/* *{
+    background-color: gray;
 } */
 
 
@@ -18,5 +24,23 @@ color:red;
 
 #id-selector {
     color: coral;
+    font-size: 20px;
+    text-align: center;
 }
 
+h2, h3, .Group-3, #Group-4 {
+    text-align: center;
+}
+
+ul li{
+    font-size: 32px;
+    /* list-style-type: square; */
+}
+
+/* Pseudo-classes and Pseudo-elements */
+/* Pseudo-classes and pseudo-elements are used for styling specific states or parts of elements. 
+Pseudo classes target's the elements based on a particular state and pseudo elements targets the elements on basis of a particular part of that element. */
+a:hover {
+    color: rgba(206, 55, 5, 0.842);
+    text-decoration: none;
+}
