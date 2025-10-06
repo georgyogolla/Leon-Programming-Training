@@ -122,5 +122,76 @@ a[href^="https"]{
 
 /* Wildcard Selector (*=): Matches elements where the attribute value contains a specific string. For example, underlining links with example in the URL. */
 a[href*="example"]{
-    text-decoration: none;
+    background-color: aqua;
 }
+
+/* Pseudo-classes in CSS define the special states of elements for styling. Examples include :hover (applies when an element is hovered), :first-child (targets the first child of a parent), and :nth-child(2) (targets the second child). */
+
+/* 1. :hover: Styles elements when the user hovers over them. For example, changing the color of a link when hovered. */
+
+.pseudo-class:hover{
+    background-color: red;
+    color: white;
+    font-size: 32px;
+    text-align: center;
+    text-decoration: none; 
+
+}
+
+/* 2. :focus: Styles the elements when the user focus on any particular element. */
+.focus{
+    border: 1px solid red;
+}
+
+.focus:focus{
+    background-color: blue;
+    color: white;
+}
+
+/* 3. :first-child: Styles the element which is the first child of it's parent. */
+.boxes{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 500px;
+    height: 300px;
+    border: 1px solid red;
+
+}
+.box{
+    background-color: rgb(19, 9, 156);
+    color: white;
+    text-align: center;
+}
+
+.box:first-child{
+    font-size: 32px;
+}
+.box:last-child{
+    background-color: red;
+    font-size: 32px;
+}
+
+.box:nth-child(2){
+    background-color: green;
+    font-size: 18px;
+}
+
+.box:nth-child(3){
+    background-color: black;
+    font-size: 20px;
+}
+
+/* 5. :not: Helps to remove a particular element from the styling index or styling context.
+ */
+ .container{
+    margin-top: 20px;
+    border: 1px solid green;
+    width: 400px;
+    height: 200px;
+ }
+ .container:not(.box-3){
+    background-color: chocolate;
+    color: white;
+    font-size: 20px;
+    /* border: 2px solid white; */
+ }
