@@ -189,9 +189,63 @@ a[href*="example"]{
     width: 400px;
     height: 200px;
  }
- .container:not(.box-3){
+ /* p:not(.box-3){
     background-color: chocolate;
     color: white;
     font-size: 20px;
-    /* border: 2px solid white; */
- }
+    /* border: 2px solid white; 
+ /* }  */
+
+.container>p:not(.box-3){
+    background-color: chocolate;
+}
+
+/* 5. Pseudo-Element's */
+/* The Pseudo Element help's to access and control a specific part of an element for inserting content before an element or inserting content after an element. Targeting any specific part of a word or a sentence. It is usually used to beautify the internal content of an element. */
+
+/* 1. ::before: It helps to insert some content before an element. */
+.pseudo-element-container{
+    margin-top: 20px;
+    padding: 10px;
+    width: 400px;
+    height: 400px;
+    border: 1px solid red;
+}
+
+.pseudo-element-container > .pseudo-element-1::before{
+    content: "Hello, This is an introduction to pseudo elements";
+    display: block;
+    color: green;
+}
+
+/* 2. ::after: It help's to insert some content after an element. */
+
+/* Example: */
+.pseudo-element-container > .pseudo-element-1::after{
+    content: "This is the content inserted using pseudo element after property";
+    display: block;
+    color: blue;
+}
+
+/* 3.::first-line: Styles the first line of text within a block element. Line breaks mark the beginning of a new line. */
+.pseudo-element-1::first-line{
+    color: red;
+}
+
+/* 4. ::first-letter: It Styles the first-letter of a word or a sentence. */
+.pseudo-element-1::first-letter{
+    color: rgb(170, 255, 0);
+    font-size: 22px;
+}
+
+
+/* comment  */
+.seudo-element{
+    margin-top: 10px;
+    
+}
+.seudo-element::placeholder{
+    color: red;
+    font-size: 18px;
+    text-decoration: line-through;
+}
