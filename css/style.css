@@ -249,3 +249,23 @@ a[href*="example"]{
     font-size: 18px;
     text-decoration: line-through;
 }
+
+/* CSS COLORS  */
+/* CSS colors are used to set the color of different parts of a webpage, like text, background, and borders. 
+This helps make the page look more attractive and easier to read. 
+You can define colors using names, hex codes, RGB values, and more. */
+.normal-color{
+    color: red;
+}
+
+.hex-code-color{
+    background-color: #08CB00;
+}
+
+.rgb-color{
+    color: rgb(0, 0, 255);
+}
+
+.rgba-color{
+    color: rgba(216, 87, 230, 0.5);
+}
