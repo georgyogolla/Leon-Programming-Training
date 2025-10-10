@@ -269,3 +269,90 @@ You can define colors using names, hex codes, RGB values, and more. */
 .rgba-color{
     color: rgba(216, 87, 230, 0.5);
 }
+
+.bg-color{
+    background-color: rgba(0, 0, 255, 0.8);
+    color: #fff;
+    border: 1px solid red;
+    border-radius: 5px;
+}
+
+.bg-color:hover{
+    background-color: rgba(200, 0, 0.5);
+    color: #000;
+}
+
+/* 5. Shadows and Text Effects */
+/* You can use box-shadow to add shadows around elements or text-shadow for adding shadows to the text, creating depth and emphasis. */
+
+.text-shadow{
+    text-shadow: 2px 2px 2px rgba(255, 0, 0, 0.5);
+    color: #3AF269;
+    
+}
+
+.box-shadow-effect{
+    box-shadow: 10px 5px 5px rgba(0, 0, 200, 0.5);
+    background-color: red;
+    color: white;
+    padding: 20px;
+}
+
+/* 6. Gradients */
+/* CSS allows you to create gradients using the background property. Gradients can transition smoothly between two or more colors. */
+
+/* CSS linear-gradient() Function */
+/* The CSS linear-gradient() function creates a linear gradient. */
+
+/* A linear gradient defines a color transition that goes in a straight line, it can go down, up, to left, to right, or diagonally. */
+/* 
+A linear gradient requires at least two color stops. Color stops are the colors you want to render smooth transitions among. You can also set a starting point and a direction (or an angle) along with the gradient effect.
+
+Syntax
+background-image: linear-gradient(direction, color-stop1, color-stop2, ...); */
+
+.linear-gradient-to-top{
+    margin-top: 20px;
+    padding: 40px;
+    color: #fff;
+    font-size: 32px;
+    background-image: linear-gradient(to top, red, blue);
+}
+
+.linear-gradient-to-right{
+    background-image: linear-gradient(to right, yellow, green);
+    margin-top: 20px;
+    padding: 40px;
+    font-size: 20px;
+    border-radius: 5px;
+    
+}
+
+.linear-gradient-to-left{
+    background-image: linear-gradient(to right,green, gold);
+    text-shadow: 3px 5px 3px rgba(0, 0, 255, 1);
+    margin-top: 20px;
+    padding: 40px;
+    font-size: 20px;
+    border-radius: 5px;
+    color: white;
+    
+}
+
+.diagonal-gradient-to-bottom-right{
+    background-image: linear-gradient(to bottom right, red, gold);
+    margin-top: 20px;
+    padding: 40px;
+    color: white;
+    font-size: 32px;
+    border-radius: 5px;
+}
+
+.diagonal-gradient-to-top-left{
+    background-image: linear-gradient(to top left, blue, rgb(9, 206, 58));
+    margin-top: 20px;
+    padding: 40px;
+    color: white;
+    font-size: 32px;
+    border-radius: 5px;
+}
