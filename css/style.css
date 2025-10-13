@@ -356,3 +356,48 @@ background-image: linear-gradient(direction, color-stop1, color-stop2, ...); */
     font-size: 32px;
     border-radius: 5px;
 }
+
+/* to top  */ 
+/* - represented using 0deg */
+.linear-angles-0deg{
+    background-image: linear-gradient(0deg, red, black);
+    margin-top: 20px;
+    padding: 40px;
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+
+/* to right  */ 
+/* - represented using 90deg */
+.linear-angles-90deg{
+    background-image: linear-gradient(90deg, rgb(47, 235, 9), rgb(175, 3, 121));
+    margin-top: 20px;
+    padding: 40px;
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+/* Linear gradient for multiple color stops  */
+.kenyan-flag-colors{
+    width: 400px;
+    height: 200px;
+    margin-top: 20px;
+    background-image: linear-gradient(black, white, red, white, green);
+}
+
+
+.rainbow-colors{
+    width: 600px;
+    height: 400px;
+    background-image: linear-gradient(to right, #ff1a00, #ff8d00, #e3ff00, #00ff04, #0051ff);
+    margin-top: 20px;
+}
+
+/* The CSS repeating-linear-gradient() function is used to repeat linear gradients: */
+.repeating-linear-gradients{
+    width: 600px;
+    height: 400px;
+    margin-top: 20px;
+    background-image: repeating-linear-gradient(yellow, green 10%, red 20%);
+}
