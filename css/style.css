@@ -399,5 +399,26 @@ background-image: linear-gradient(direction, color-stop1, color-stop2, ...); */
     width: 600px;
     height: 400px;
     margin-top: 20px;
-    background-image: repeating-linear-gradient(yellow, green 10%, red 20%);
+    background-image: repeating-linear-gradient(green, green 20%, red 20%, red 60%);
+}
+
+/* CSS radial-gradient() Function */
+/* The CSS radial-gradient() function creates a radial gradient. */
+
+/* A radial gradient defines a color transition that goes goes out from a central point. */
+
+/* A radial gradient requires at least two color stops. Color stops are the colors you want to render smooth transitions among. */
+
+.radial-gradient{
+    background-image: radial-gradient(green, yellow, red);
+    width: 400px;
+    height: 200px;
+    margin-top: 20px;
+}
+
+.radial-gradient-circle{
+    background-image: radial-gradient(circle, red, rgb(190, 6, 172));
+    width: 600px;
+    height: 400px;
+    margin-top: 20px;
 }
