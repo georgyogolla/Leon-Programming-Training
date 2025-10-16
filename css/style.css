@@ -422,3 +422,13 @@ background-image: linear-gradient(direction, color-stop1, color-stop2, ...); */
     height: 400px;
     margin-top: 20px;
 }
+
+
+/* CSS repeating-radial-gradient() Function */
+/* The CSS repeating-radial-gradient() function is used to repeat radial gradients: */
+.repeating-radial-gradient{
+    width: 400px;
+    height: 200px;
+    margin-top: 20px;
+    background-image: repeating-radial-gradient(circle, red 10%, yellow 20%, green 30%);
+}
