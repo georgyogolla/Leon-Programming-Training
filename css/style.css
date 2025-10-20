@@ -471,7 +471,7 @@ background-image: linear-gradient(direction, color-stop1, color-stop2, ...); */
     text-overflow: ellipsis;
 }
 
-.btn-elipsis{
+ .btn-elipsis{
     font-size: 16px;
     width: 100px;
     height: 20px;
@@ -489,4 +489,37 @@ background-image: linear-gradient(direction, color-stop1, color-stop2, ...); */
     height: 600px;
     border: 1px solid yellow;
     word-wrap: break-word;
+}
+
+/* word-break  */
+.word-break{
+    width:50%;
+    height: 70vh;
+    border: 1px solid red;
+    word-break: break-all;
+}
+
+/* CSS writing-mode Property */
+/* The CSS writing-mode property specifies whether lines of text are laid out horizontally or vertically. */
+
+/* This property can take one of the following values: */
+
+/* horizontal-tb - Default. The text flows horizontally from left to right, vertically from top to bottom */
+/* vertical-rl - The text flows vertically from top to bottom, horizontally from right to left */
+/* vertical-lr - The text flows vertically from top to bottom, horizontally from left to right */
+
+.tb{
+    color: red;
+    writing-mode: horizontal-tb
+}
+
+.rl{
+    color: rgb(38, 128, 0);
+    writing-mode: vertical-rl;
+}
+
+.lr{
+    margin-top: 20px;
+    color: #ff8d00;
+    writing-mode: vertical-lr;
 }
