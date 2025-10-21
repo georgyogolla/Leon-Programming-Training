@@ -523,3 +523,51 @@ background-image: linear-gradient(direction, color-stop1, color-stop2, ...); */
     color: #ff8d00;
     writing-mode: vertical-lr;
 }
+
+/* The CSS Box Model defines how elements are sized, positioned, and rendered on a webpage. When a browser loads an HTML document, it creates a DOM tree and assigns a box to each element. This box calculates the element's dimensions and position relative to its parent or the root <html> element, ensuring accurate layout and spacing. */
+/* Borders  */
+.borders{
+    margin-top: 20px;
+    border: 1px solid red;
+}
+
+.border-top{
+    margin-top: 20px;
+    border-top: 1px dashed green;
+}
+
+.border-right{
+    width: 50%;
+    height: 50vh;
+    margin-top: 20px;
+    border-right: 1px dotted black;
+}
+
+.all-borders{
+    text-align: center;
+    width: 200px;
+    height: 200px;
+    margin-top: 20px;
+    border-top: 1px solid red;
+    border-bottom: 1px solid rgb(229, 225, 7);
+    border-left: 1px solid rgb(6, 188, 39);
+    border-right: 1px solid rgb(1, 25, 161);
+}
+
+
+
+/* Normal - background-color should be red , text-color should be white  */
+.border-radius{
+    margin-top: 20px;
+    background-color: red;
+    color: white;
+    border: 1px solid red;
+    border-radius: 5px;
+}
+/* Hover - background should be blue, text-color should be white, border-radius, border  should be blue */
+.border-radius:hover{
+    background-color: blue;
+    color: white;
+    border: 1px solid  blue;
+    border-radius: 5px;
+}
