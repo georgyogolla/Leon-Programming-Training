@@ -571,3 +571,64 @@ background-image: linear-gradient(direction, color-stop1, color-stop2, ...); */
     border: 1px solid  blue;
     border-radius: 5px;
 }
+
+/* margins  */
+/* CSS margins are used to create space around an element, separating it from neighboring elements and the edges of the webpage. They control the layout by adjusting the distance between elements, providing better organization and readability. */
+.margin{
+    width: 200px;
+    height: 200px;
+    border: 1px solid red;
+    margin: 20px;
+}
+.margin-right{
+    width: 200px;
+    height: 200px;
+    border: 1px solid yellow;
+}
+
+.margin-bottom{
+    width: 200px;
+    height: 200px;
+    border: 1px solid green;
+}
+
+/* if a margin has 4 values, the first represents top, second represents right, third represents bottom, fourth represents left  */
+.margins{
+    width: 100px;
+    height: 200px;
+    border: 1px solid black;
+}
+.margin-1{
+    width: 50px;
+    height: 50px;
+    border: 1px solid red;
+    margin: 20px 30px 10px 15px;
+}
+
+
+/* If the margin property contains three values, then the first value sets the top margin, the second value sets the right and left margin, and the third value sets the bottom margin. */
+.margs{
+    width: 70px;
+    height: 50px;
+    border: 1px solid greenyellow;
+    margin: 10px 20px 10px;
+}
+
+/* If the margin property contains two values, then the first value applies to the top and bottom margin, and the second value applies to the right and left margin. */
+.margin-two-vals{
+    width: 70px;
+    height: 70px;
+    border: 1px solid brown;
+    margin:0px 50px;
+
+}
+/* margin: auto;: Automatically adjusts the left and right margins to center the element horizontally. */
+/* The element must have a defined width for margin: auto; to work effectively. */
+.center{
+    margin: auto;
+
+    width: 50%;
+    height: 100px;
+    border: 1px solid red;
+    text-align: center;
+}
