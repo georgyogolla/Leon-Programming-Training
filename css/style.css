@@ -632,3 +632,54 @@ background-image: linear-gradient(direction, color-stop1, color-stop2, ...); */
     border: 1px solid red;
     text-align: center;
 }
+
+/* Padding  */
+/* CSS Padding property is used to create space between the element's content and the element's border. It only affects the content inside the element. */
+.padding{
+    margin-top: 40px;
+    width: 200px;
+    height: 100px;
+    border: 1px solid yellow;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+
+}
+
+.inner-padding{
+    border: 1px solid red;
+    padding: 20px;
+}
+
+/* Padding Property for Two Values */
+/* If the padding property contains two values, then the first value applies to the top and bottom padding, and the second value applies to the right and left padding. */
+.shorthand-padding{
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+    margin-top: 20px;
+    padding: 10px 20px ;
+}
+
+/* If the padding property contains three values, then the first value sets the top padding, the second value sets the right and left padding, and the third value sets the bottom padding. */
+.shorthand-padding-three-vals{
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+    margin-top: 20px;
+    padding: 10px 20px 60px;
+}
+
+/* Padding Property Having Four Values */
+/* If the padding property contains four values, then the first value sets the top padding, the second value sets the right padding, the third value sets the bottom padding, and the fourth value sets the left padding.: */
+.padding-four-vals{
+    margin-top: 10px;
+    width: 100px;
+    height: 100px;
+    border: 2px dashed green;
+    padding: 10px 15px 20px 25px;
+    border-radius: 5px;
+    background: linear-gradient(rgba(255, 0, 0, 0.5));
+    color: #fff;
+}
