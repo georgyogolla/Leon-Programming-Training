@@ -1,3 +1,7 @@
+
+html{
+    font-size: 8px;
+}
 /* CSS Selectors  */
 /* Type Selector (elements)
 class 
@@ -682,4 +686,29 @@ background-image: linear-gradient(direction, color-stop1, color-stop2, ...); */
     border-radius: 5px;
     background: linear-gradient(rgba(255, 0, 0, 0.5));
     color: #fff;
+}
+
+/* CSS Units */
+/* Last Updated : 28 Jul, 2025 */
+/* CSS units define the size of elements, with absolute units (like px, cm) having fixed values and relative units (like em, rem, %, vh) depending on factors like the viewport or parent elements. */
+/* - Use px mostly for border width and box shadows  */
+
+.pixels-unit{
+    font-size: 32px;
+}
+
+/* Relative Units */
+/* 1. em */
+/* In CSS , the "em" unit refers to the font-size of its parent element, defaulting to the root element (<html>) if it's the only one in the DOM. */
+.parent-el{
+    font-size: 3em;
+}
+.child-el{
+    font-size: 2em;
+}
+
+/* 2. rem */
+/* In CSS, rem is based on the font-size of the root element (<html>) and stays the same in all cases. */
+.center{
+    font-size: 3rem;
 }
