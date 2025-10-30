@@ -1,7 +1,7 @@
 
-html{
+/* html{
     font-size: 8px;
-}
+} */
 /* CSS Selectors  */
 /* Type Selector (elements)
 class 
@@ -711,4 +711,34 @@ background-image: linear-gradient(direction, color-stop1, color-stop2, ...); */
 /* In CSS, rem is based on the font-size of the root element (<html>) and stays the same in all cases. */
 .center{
     font-size: 3rem;
+}
+
+/* 3. vw or view-width */
+/* In CSS, vw depends on the viewport width, which changes with screen size, so an Android phone has a smaller vw than an HD TV. */
+.vw{
+    width: 50vw;
+    border: 1px dashed red;
+    margin-left: 0.8rem;
+}
+
+.imgs{
+    width: 100vw;
+    height: 70vw;
+    border: 2px solid greenyellow;
+}
+.img-vw{
+    width: 50vw;
+    height: 50vh;
+}
+
+/* 5. percentage(%) */
+/* The % unit in CSS is relative to the parent element's size, allowing elements to adjust dynamically for responsive design. */
+.percentage-unit{
+    width: 300px;
+    height: 400px;
+    border: 2px dotted blue;
+}
+
+.p-unit{
+    width: 50%;
 }
