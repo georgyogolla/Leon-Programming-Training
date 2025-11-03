@@ -16,6 +16,7 @@ id  */
 /* *{
     background-color: gray;
 } */
+ 
 
 
 h1 {
@@ -741,4 +742,65 @@ background-image: linear-gradient(direction, color-stop1, color-stop2, ...); */
 
 .p-unit{
     width: 50%;
+}
+
+
+/* CSS variables (custom properties) are reusable values defined with two dashes (--) that make your CSS code efficient and easier to maintain.
+
+Store values like colors, sizes, or fonts in one place for centralized updates.
+Use var() to apply these variables anywhere in your CSS.
+Improve code readability and consistency across your styles.
+Syntax
+
+var( --custom-name, value );
+Parameters
+
+--custom-name: (Required) The name of the custom property, starting with two dashes (--).
+value: (Optional) A value used if the custom property is not defined or is invalid. */
+
+/* Creating CSS Variables */
+:root{
+    --main-background-color: #DD7BDF;
+    --main-text-size: 1.15rem;
+    --main-border: 1px dashed red;
+    --frequent-margin-top: 2rem;
+    --standard-padding: 0.8rem;
+    --text-color: #fff; 
+    --standard-width: 400px;
+    --standard-height: 300px;
+    --button-background: blue;
+    --standard-border-radius: 5px; 
+    --container-background-color: #F5AD18;
+}
+
+/* Using CSS Variables  */
+.var-1{
+    font-size: var(--main-text-size);
+    background-color: var(--main-background-color);
+    color: var(--text-color);
+}
+
+.var-2{
+    border: var(--main-border);
+    font-size: var(--main-text-size);
+    color: var(--text-color);
+    background-color: var(--button-background);
+    border-radius: var(--standard-border-radius);
+}
+
+.var-3{
+    width: var(--standard-width);
+    height: var(--standard-height);
+    border: var(--main-border);
+    margin-top: var(--frequent-margin-top);
+    padding: var(--standard-padding);
+    background-color: var(--container-background-color);
+    border-radius: var(--standard-border-radius);
+}
+
+.var-4{
+    border: var(--main-border);
+    color: var(--text-color);
+    padding: var(--standard-padding);
+    border-radius: var(--standard-border-radius);
 }
