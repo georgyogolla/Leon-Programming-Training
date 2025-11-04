@@ -761,7 +761,7 @@ value: (Optional) A value used if the custom property is not defined or is inval
 /* Creating CSS Variables */
 :root{
     --main-background-color: #DD7BDF;
-    --main-text-size: 1.15rem;
+    --main-text-size: 2.5rem;
     --main-border: 1px dashed red;
     --frequent-margin-top: 2rem;
     --standard-padding: 0.8rem;
@@ -803,4 +803,28 @@ value: (Optional) A value used if the custom property is not defined or is inval
     color: var(--text-color);
     padding: var(--standard-padding);
     border-radius: var(--standard-border-radius);
+}
+
+/* CSS Fonts
+Last Updated : 01 Nov, 2025
+CSS fonts are used to style and enhance the appearance of text on a webpage, making it more readable and visually appealing. They help control how text looks and fits within the overall design.
+
+Used to set the size, weight, style, and color of text.
+Help create a consistent and attractive look across a website.
+Improve readability and align the text style with the website’s theme. */
+
+.fonts{
+    font-size: 2.rem;
+    font-family: 'Dancing Script', roboto;
+    line-height: 1.5;
+}
+
+.google-fonts{
+    font-family: "Great Vibes";
+    font-weight: 500;
+}
+
+.font-style{
+    font-style: italic;
+    
 }
