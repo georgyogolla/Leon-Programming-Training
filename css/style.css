@@ -828,3 +828,72 @@ Improve readability and align the text style with the website’s theme. */
     font-style: italic;
     
 }
+
+/* CSS Positioning Elements
+CSS positioning defines how elements are placed within a web page. It allows you to control the layout, stacking order, and alignment of elements. The primary positioning types in CSS are: */
+/* 1. Static Positioning
+Static is the default position of an element. It does not accept properties like top, left, right, or bottom. */
+
+.static{
+    background-color: #ff1a00;
+    color: white;
+    border: 1px solid red;
+    border-radius: 5px;
+    position:static;
+}
+/* 2. Relative Positioning
+Relative positioning places an element relative to its normal position. You can move it using top, left, right, or bottom. */
+.relative{
+    background-color: greenyellow;
+    color: white;
+    border: 1px solid greenyellow;
+    border-radius: 5px;
+    position: relative;
+    bottom: 20px;
+    /* top: 20px ; */
+    left: 100px;
+}
+
+/* 3. Absolute Positioning
+Absolute positioning removes the element from the document flow and places it relative to the nearest ancestor with a positioning context (relative, absolute, or fixed). */
+.abs{
+    position: relative;
+    border: 1px solid green;
+    width: var(--standard-width);
+    height: var(--standard-height);
+    margin-top: var(--frequent-margin-top);
+}
+.absolute{
+    position: absolute;
+    border: var(--main-border);
+    padding: var(--standard-padding);
+    /* top: 20px; */
+    left: 20px;
+}
+
+/* 4. Fixed Positioning
+Fixed positioning removes the element from the flow and positions it relative to the viewport. It remains in place even when the page scrolls. */
+.fixed{
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    border: var(--main-border);
+    padding: var(--standard-padding);
+    background-color: var(--main-background-color);
+    color: #fff;
+}
+.content{
+    width: var(--standard-width);
+    height: var(--standard-height);
+    border: var(--main-border);
+}
+
+/* 5. Sticky Positioning
+Sticky positioning switches between relative and fixed based on the scroll position. */
+.sticky{
+    position: sticky;
+    top: 10px;
+    border: var(--main-border);
+    background-color: var(--main-background-color);
+    color: #fff;
+}
