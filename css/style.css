@@ -897,3 +897,48 @@ Sticky positioning switches between relative and fixed based on the scroll posit
     background-color: var(--main-background-color);
     color: #fff;
 }
+
+/* The CSS display property determines how an element is displayed on a webpage, defining its layout behavior and how it interacts with other elements.
+
+It specifies the type of rendering box an element generates.
+Controls whether an element is shown as a block, inline, flex, grid, etc.
+Affects the layout structure and overall page flow. */
+
+.main{
+    width: var(--standard-width);
+    height: var(--standard-height);
+    border: var(--main-border);
+    padding: var(--standard-padding);
+}
+/* Use this property to display an element inline. It doesn’t start a new line and respects the content flow. */
+.main div{
+    display: inline;
+}
+.display-1{
+    /* border: var(--main-border); */
+    
+}
+.display-2{
+    /* border: 1px dashed yellow; */
+    
+}
+.display-3{
+    /* border: 1px dotted green; */
+}
+.display-4{
+    /* border: 1px solid blue; */
+}
+
+/* This is the default property for <div> elements. It places them vertically, one after another. You can adjust the height and width of a block-level element. */
+.inline-to-block span{
+    display: block;
+}
+
+/* This property hides the div or the container which use this property. Using it on one of the div it will make working clear.  */
+/* .main{
+    display: none;
+    width: var(--standard-width);
+    height: var(--standard-height);
+    border: var(--main-border);
+    padding: var(--standard-padding);
+} */
