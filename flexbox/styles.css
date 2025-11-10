@@ -1,0 +1,44 @@
+
+h1{
+    color: red;
+}
+:root{
+    --standard-width: 400px;
+    --standard-height: 400px;
+    --child-width: 200px;
+    --child-height: 200px;
+    --standard-background-color: blue;
+    --standard-color: #fff;
+    --standard-border: 1px dashed #fff;
+    --standard-margin: 2rem;
+    --standard-padding: 1rem;
+}
+/* What is CSS Flexbox?
+The Flexible Box Layout module introduces a one-dimensional layout system that handles space distribution and item alignment effectively. It works seamlessly for horizontal (row) or vertical (column) arrangements, making it a go-to solution for responsive designs.
+
+Key Features of CSS Flexbox
+Alignment: Easily aligns items along the main axis (row/column) or cross-axis (perpendicular direction).
+Space Distribution: Distributes space among items or gaps dynamically within a container.
+Responsive Design: Adapts to screen sizes without extra effort, perfect for modern web layouts. */
+.flexy{
+    width: var(--standard-width);
+    height: var(--standard-height);
+    border: var(--standard-border);
+}
+
+.flexy{
+    display: flex;
+    border: 1px solid red;
+    padding: 2rem;
+}
+
+.flex-1{
+     border: 1px solid yellow;
+}
+.flex-2{
+     border: 1px solid rgb(224, 11, 64);
+}
+.flex-3{
+     border: 1px solid rgb(7, 203, 85);
+}
+   

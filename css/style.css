@@ -932,6 +932,7 @@ Affects the layout structure and overall page flow. */
 /* This is the default property for <div> elements. It places them vertically, one after another. You can adjust the height and width of a block-level element. */
 .inline-to-block span{
     display: block;
+    background-color: var(--container-background-color);
 }
 
 /* This property hides the div or the container which use this property. Using it on one of the div it will make working clear.  */
@@ -942,3 +943,12 @@ Affects the layout structure and overall page flow. */
     border: var(--main-border);
     padding: var(--standard-padding);
 } */
+
+/* Flexbox  */
+/* The Flexible Box Layout module introduces a one-dimensional layout system that handles space distribution and item alignment effectively. It works seamlessly for horizontal (row) or vertical (column) arrangements, making it a go-to solution for responsive designs. */\
+.flex-box{
+    width: var(--standard-width);
+    height: var(--standard-height);
+    border: var(--main-border);
+    background-color: var(--main-background-color);
+}
