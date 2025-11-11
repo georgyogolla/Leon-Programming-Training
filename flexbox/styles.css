@@ -3,7 +3,7 @@ h1{
     color: red;
 }
 :root{
-    --standard-width: 400px;
+    --standard-width: 100%;
     --standard-height: 400px;
     --child-width: 200px;
     --child-height: 200px;
@@ -12,6 +12,8 @@ h1{
     --standard-border: 1px dashed #fff;
     --standard-margin: 2rem;
     --standard-padding: 1rem;
+    --flex-item-height: 70px;
+    --flex-item-width: 200px;
 }
 /* What is CSS Flexbox?
 The Flexible Box Layout module introduces a one-dimensional layout system that handles space distribution and item alignment effectively. It works seamlessly for horizontal (row) or vertical (column) arrangements, making it a go-to solution for responsive designs.
@@ -20,25 +22,72 @@ Key Features of CSS Flexbox
 Alignment: Easily aligns items along the main axis (row/column) or cross-axis (perpendicular direction).
 Space Distribution: Distributes space among items or gaps dynamically within a container.
 Responsive Design: Adapts to screen sizes without extra effort, perfect for modern web layouts. */
+
+/* Flexbox Axes
+Flexbox operates on two axes:
+
+Main Axis: Runs from left to right by default.
+Cross Axis: Perpendicular to the main axis, runs from top to bottom. */
+
+/* Flex Direction Properties
+Left to Right: flex-direction: row;
+Right to Left: flex-direction: row-reverse;
+Top to Bottom: flex-direction: column;
+Bottom to Top: flex-direction: column-reverse; */
+
+/* Aligning and Justifying Content
+Flexbox provides several properties for aligning and justifying content within the container:
+
+justify-content: Aligns items along the main axis (e.g., flex-start, flex-end, center, space-between, space-around).
+align-items: Aligns items along the cross axis (e.g., stretch, center, flex-start, flex-end).
+align-content: Aligns rows within a flex container when there is extra space on the cross axis. */
+
 .flexy{
     width: var(--standard-width);
     height: var(--standard-height);
     border: var(--standard-border);
+
 }
 
 .flexy{
     display: flex;
+    flex-direction: row;
+    /* flex-direction: row-reverse; */
+    /* flex-direction: column; */
+    /* flex-direction: column-reverse; */
+    /* justify-content: space-between; */
+    /* justify-content: space-around; */
+    /* justify-content: center; */
+    /* justify-content: flex-end; */
+    /* justify-content: flex-start; */
+    /* align-items: center; */
+    /* align-items: stretch; */
+    /* align-items: flex-end; */
+    /* align-items: flex-start; */
     border: 1px solid red;
     padding: 2rem;
+    
 }
 
 .flex-1{
      border: 1px solid yellow;
+     width: var(--flex-item-width);
+     height: var(--flex-item-height);
+     background-color: yellowgreen;
+     color: var(--standard-color);
 }
 .flex-2{
      border: 1px solid rgb(224, 11, 64);
+     width: var(--flex-item-width);
+     height: var(--flex-item-height);
+     background-color: brown;
+     color: var(--standard-color);
 }
 .flex-3{
      border: 1px solid rgb(7, 203, 85);
+     width: var(--flex-item-width);
+     height: var(--flex-item-height);
+     background-color: chartreuse;
+     color: var(--standard-color);
 }
    
