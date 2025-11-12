@@ -52,6 +52,8 @@ align-content: Aligns rows within a flex container when there is extra space on 
 .flexy{
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
+    align-content: flex-end;
     /* flex-direction: row-reverse; */
     /* flex-direction: column; */
     /* flex-direction: column-reverse; */
@@ -90,4 +92,57 @@ align-content: Aligns rows within a flex container when there is extra space on 
      background-color: chartreuse;
      color: var(--standard-color);
 }
-   
+
+.navbar{
+    display: flex;
+    margin-top: 2rem;
+    justify-content: flex-end;
+
+}
+.navbar > a{
+     margin: 0.8rem;
+     text-decoration: none;
+}
+.navbar>a:hover{
+    color: red;
+}
+
+.container{
+    display: inline-flex;
+}
+
+/* The place-content Property
+If you need to use both the justify-content and align-content properties, you use the place-content shorthand property.
+
+It can take one or two values. When you give it a single value, the browser will apply the same value for both justify-content and align-content.
+
+And when you give 2 values for place-content, the first value will be for align-content and the second for justify-content. */
+
+.container-2{
+    margin-top: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    /* align-content: space-around; */
+    /* justify-content: space-around; */
+    /* place-content: align-content justify-content; */
+    place-content: space-around space-around;
+    width: 400px;
+    height: 300px;
+    border: 1px solid red;
+}
+
+#red-1{
+    background-color: red;
+    width: 50px;
+    height: 50px;
+}
+#gold-2{
+    background-color: gold;
+    width: 50px;
+    height: 50px;
+}
+#green-3{
+    background-color: green;
+    width: 50px;
+    height: 50px;
+}
