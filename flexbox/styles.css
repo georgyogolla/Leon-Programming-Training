@@ -121,28 +121,126 @@ And when you give 2 values for place-content, the first value will be for align-
 .container-2{
     margin-top: 2rem;
     display: flex;
-    flex-wrap: wrap;
+    align-items: flex-end;
+    /* flex-wrap: wrap; */
     /* align-content: space-around; */
     /* justify-content: space-around; */
     /* place-content: align-content justify-content; */
-    place-content: space-around space-around;
+    /* place-content: space-around space-around; */
     width: 400px;
     height: 300px;
     border: 1px solid red;
 }
 
+/* The Flex Item Properties */
+/* Every direct child of a flex container is a flex item. So far, you've learned the properties of the flex containers. */
 #red-1{
     background-color: red;
     width: 50px;
     height: 50px;
+    order: 2;
+    align-self: flex-start;
 }
 #gold-2{
     background-color: gold;
     width: 50px;
     height: 50px;
+    order: 3;
 }
 #green-3{
+    order: 1;
     background-color: green;
     width: 50px;
     height: 50px;
+}
+
+.align-self{
+    display: flex;
+    flex-direction: row;
+    /* align-items: center; */
+    justify-content: flex-start;
+    margin-top: 2rem;
+    border: 1px dashed red;
+    width: 300px;
+    height: 200px;
+}
+
+.self-1{
+    /* width: 50px; */
+    height: 50px;
+    /* flex-grow: 3; */
+    /* flex-shrink: 3; */
+    flex-basis: 70px;
+    background-color: yellow;
+    border: 1px solid yellow;
+}
+.self-2{
+    width: 50px;
+    height: 50px;
+    /* align-self: flex-start; */
+    /* flex-grow: 1; */
+    background-color: blue;
+    border: 1px dotted blue;
+}
+
+.self-3{
+    width: 50px;
+    height: 50px;
+    /* align-self: flex-start; */
+    /* flex-grow: 1; */
+    background-color: green;
+    border: 1px dotted blue;
+}
+
+.self-4{
+    width: 50px;
+    height: 50px;
+    /* align-self: flex-start; */
+    /* flex-grow: 1; */
+    background-color: yellowgreen;
+    border: 1px dotted blue;
+}
+.self-5{
+    width: 50px;
+    height: 50px;
+    /* align-self: flex-start; */
+    /* flex-grow: 1; */
+    background-color: goldenrod;
+    border: 1px dotted blue;
+}
+.self-6{
+    width: 50px;
+    height: 50px;
+    /* align-self: flex-start; */
+    /* flex-grow: 1; */
+    /* flex-shrink: 3; */
+    background-color: blueviolet;
+    border: 1px dotted blue;
+}
+.self-7{
+    width: 50px;
+    height: 50px;
+    /* align-self: flex-start; */
+    /* flex-grow: 1; */
+    /* flex-shrink: 3; */
+    background-color: brown;
+    border: 1px dotted blue;
+}
+.self-6{
+    width: 50px;
+    height: 50px;
+    /* align-self: flex-start; */
+    /* flex-grow: 1; */
+    /* flex-shrink: 3; */
+    background-color: rgb(8, 177, 186);
+    border: 1px dotted blue;
+}
+.self-9{
+    width: 50px;
+    height: 50px;
+    /* align-self: flex-start; */
+    /* flex-grow: 1; */
+    flex-shrink: 2;
+    background-color: rgb(121, 174, 57);
+    border: 1px dotted blue;
 }
