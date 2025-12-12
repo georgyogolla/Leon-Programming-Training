@@ -68,8 +68,9 @@
 
   /* Grid  */
   display: grid;
-  grid-template-columns: 50% 50%;
-  grid-template-rows: 50% 50%;
+  /* grid-template-columns: 50% 50%; */
+  grid-template-columns: 1fr 2fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
   height: 1000px;
   /* grid-template-columns: 200px 200px 200px 200px; */
   /* grid-template-rows: 200px 200px; */
@@ -81,9 +82,26 @@
 .navbar {
   background-color: aqua;
 }
+.navbar-2 {
+  background-color: rgb(80, 169, 7);
+}
 .main {
   background-color: rgb(183, 232, 20);
 }
 .footer {
   background-color: brown;
 }
+
+/* Simplify Layout Definitions with repeat */
+#container-2 {
+  display: grid;
+  /* grid-template-columns: 1fr 1fr 1fr; */
+  /* grid-template-columns: repeat(3, 1fr); */
+  grid-template-columns: 2fr repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+}
+
+/* It's important to understand how space is allocated when mixing units:
+
+Any length units that are not fractions will be allocated first.
+The fractions will apply to the remaining space. */
