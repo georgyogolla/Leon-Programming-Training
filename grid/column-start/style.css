@@ -1,0 +1,28 @@
+#container {
+  display: grid;
+  width: 1000px;
+  height: 1000px;
+  border: 1px solid blue;
+  /* grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(5, 1fr); */
+  grid-template: repeat(5, 1fr) / repeat(5, 1fr);
+}
+
+/* .box-1 {
+  grid-column-start: 2;
+  grid-row-start: 2;
+} */
+
+.box-1 {
+  /* grid-column-start: 2;
+  grid-column-end: 5; */
+  /* grid-column: 2 / 5; */
+  /* grid-row-start: 3; */
+  /* grid-row-start: 2;
+  grid-row-end: 4; */
+  /* grid-row: 2 / 4; */
+  grid-column: 1 / 3;
+  grid-row: 2 / 4;
+}
+
+/* The shorthand grid-row is equivalent to using grid-row-start and grid-row-end, and the shorthand grid-column is equivalent to using grid-column-start and grid-column-end. */
