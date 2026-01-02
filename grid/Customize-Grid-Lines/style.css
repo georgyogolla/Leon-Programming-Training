@@ -1,0 +1,19 @@
+/* Naming the Row Lines
+Now, we can give custom names to the row lines by using square brackets with a name inside before each row size:
+
+Let's rename the first row line to header-start, the second to content-start, and the third row to footer-start: */
+
+#container-2 {
+  margin-top: 20px;
+  display: grid;
+  width: 1000px;
+  height: 1000px;
+  border: 1px solid blue;
+  /* grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(5, 1fr); */
+  grid-template-rows: [header-start]1fr [content-start]4fr [footer-start]1fr[footer-end];
+}
+
+.box-4 {
+  grid-row-start: footer-start;
+}
