@@ -1,0 +1,42 @@
+/* Creating a Layout with Grid Template Areas
+The grid-template-areas property gives us a way to assign names to areas within a grid. We're not just naming the lines, but the actual areas themselves.
+
+Let's recreate the previous layout using grid-template-areas to assign names to the navbar, main content, sidebar, and footer. */
+
+#container {
+  width: 100%;
+  height: 50vh;
+  border: 1px solid green;
+  display: grid;
+  grid-template-columns: 4fr 1fr;
+  grid-template-rows: 1fr 4fr 1fr;
+  grid-template-areas:
+    "navbar navbar"
+    "main sidebar"
+    "footer footer";
+}
+
+.box-1 {
+  background-color: red;
+  grid-area: navbar;
+
+  /* grid-column: span 2; */
+}
+.box-2 {
+  background-color: rgb(0, 255, 13);
+  grid-area: main;
+}
+.box-3 {
+  background-color: rgb(25, 0, 255);
+}
+.box-4 {
+  background-color: rgb(182, 234, 11);
+  grid-area: footer;
+}
+.box-5 {
+  background-color: rgb(12, 203, 196);
+  grid-area: sidebar;
+}
+.box-6 {
+  background-color: rgb(194, 17, 200);
+}
