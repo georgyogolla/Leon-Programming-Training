@@ -1,0 +1,44 @@
+#container {
+  width: 40%;
+  height: 50vh;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  grid-template-areas:
+    "a a a ."
+    "b c c d"
+    "b e e f"
+    "g g h f";
+}
+.box-1 {
+  background-color: red;
+  grid-area: a;
+}
+.box-2 {
+  background-color: rgb(247, 140, 33);
+  grid-area: b;
+}
+.box-3 {
+  background-color: rgb(227, 241, 25);
+  grid-area: c;
+}
+.box-4 {
+  background-color: rgb(33, 190, 93);
+  grid-area: d;
+}
+.box-5 {
+  background-color: rgb(69, 184, 247);
+  grid-area: e;
+}
+.box-6 {
+  background-color: rgb(18, 98, 68);
+  grid-area: g;
+}
+.box-7 {
+  background-color: rgb(242, 204, 211);
+  grid-area: h;
+}
+.box-8 {
+  background-color: rgb(81, 68, 198);
+  grid-area: f;
+}
