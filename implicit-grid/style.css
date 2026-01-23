@@ -1,35 +1,45 @@
+/* Filling Gaps with Row Dense */
+/* If we want to fill in as many gaps as possible, we can set the grid-auto-flow to row dense.
+
+This will cause the content to flow in the row direction and fill in the available gaps: */
+
+
 #container {
   width: 40%;
   height: 50vh;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
   /* grid-template-rows: 400px;
   grid-auto-rows: 100px; */
-  grid-auto-flow: column;
+  /* grid-auto-flow: row; */
+  /* grid-auto-flow: row dense; */
+  grid-auto-flow: column dense;
 }
 
-.box-1{
-    background-color: red;
+.box-1 {
+  background-color: red;
+  /* grid-column-start: 3; */
+  grid-row-start: 3;
 }
-.box-2{
-    background-color: rgb(95, 163, 5);
+.box-2 {
+  background-color: rgb(95, 163, 5);
 }
-.box-3{
-    background-color: rgb(56, 49, 154);
+.box-3 {
+  background-color: rgb(56, 49, 154);
 }
-.box-4{
-    background-color: rgb(211, 29, 175);
+.box-4 {
+  background-color: rgb(211, 29, 175);
 }
-.box-5{
-    background-color: rgb(216, 241, 23);
+.box-5 {
+  background-color: rgb(216, 241, 23);
 }
-.box-6{
-    background-color: rgb(179, 160, 175);
+.box-6 {
+  background-color: rgb(179, 160, 175);
 }
-.box-7{
+/* .box-7{
     background-color: rgb(47, 194, 231);
 }
 .box-8{
     background-color: rgb(33, 18, 31);
-}
+} */
