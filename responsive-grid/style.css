@@ -1,0 +1,65 @@
+#container{
+    width: 80%;
+    height: 1000px;
+    border: 1px solid red;
+    display: grid;
+    /* grid-template-columns: minmax(200px, 500px) minmax(200px, 500px); */
+    /* grid-template-columns: repeat(3, minmax(200px, 1fr)); */
+    /* grid-template-columns: minmax(0.5fr, 1fr) minmax(300px, 500px) minmax(0.5fr, 1fr); */
+    /* grid-template-columns: repeat(4, 1fr); */
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-areas: 
+      "b c c d"
+      "b e e f"
+      "g g g f"
+      "h h h h"
+      "a a a a";
+}
+.box-1 {
+    background-color: rgb(8, 147, 100);
+    grid-area: b;
+}
+.box-2 {
+    background-color: rgb(229, 255, 127);
+    grid-area: c;
+}
+.box-3 {
+    background-color: rgb(127, 131, 255);
+}
+.box-4 {
+    background-color: rgb(24, 31, 229);
+}
+.box-5 {
+    background-color: rgb(5, 5, 32);
+}
+.box-6 {
+    background-color: rgb(255, 127, 191);
+}
+.box-7 {
+    background-color: rgb(127, 255, 236);
+}
+.box-8 {
+    background-color: rgb(103, 103, 105);
+}
+.box-9 {
+    background-color: rgb(93, 184, 36);
+}
+.box-10 {
+    background-color: rgb(222, 75, 8);
+}
+/* Grid with media queries  */
+@media (max-width: 1500px){
+    #container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+@media (max-width: 800px){
+    #container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (max-width: 500px) {
+  #container {
+    grid-template-columns: 1fr;
+  }
+}
