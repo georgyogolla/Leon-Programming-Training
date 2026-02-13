@@ -1,0 +1,17 @@
+.animate{
+    width: 200px;
+    height: 100px;
+    border: 1px solid red;
+    animation-name: bg-color;
+    animation-duration: 5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 2;
+    animation-direction: reverse;
+    animation-play-state: running;
+    animation-fill-mode: both;
+}
+
+@keyframes bg-color{
+    0% {width: 300px; background-color: purple;}
+    40% {width: 100%; background-color: rgb(141, 226, 13);}
+}

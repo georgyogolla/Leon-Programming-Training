@@ -1,8 +1,15 @@
 .img-1{
     width: 40%;
     /* transition: width 3s ease-out 0.4s; */
-    transition-property: width;
-    transition-duration: 3s;
+    /* transition-property: width;
+    transition-duration: 3s; */
+    /* transition-timing-function: ease; */
+    /* transition-timing-function: ease-in; */
+    /* transition-timing-function: ease-out; */
+    /* transition-timing-function: ease-in-out; */
+    /* transition-timing-function: linear;
+    transition-delay: 5s; */
+    transition: width 3s ease-in-out 2s;
 }
 
 .img-1:hover{
@@ -13,6 +20,9 @@
     font-size: 2rem;
     transition-property: font-size;
     transition-duration: 3s;
+    /* transition-timing-function: ease; */
+    transition-timing-function: ease-in;
+    /* transition-delay: 10s; */
 }
 .p-1:hover{
     font-size: 4rem;
