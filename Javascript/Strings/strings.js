@@ -47,3 +47,31 @@ let season = "rainysSeason";
 console.log(season.indexOf("rainys"));
 console.log(season.indexOf("Season"));
 console.log(season.indexOf("d"));
+
+// SLICE
+let strTwo = "helloworldkenya";
+let sliced = strTwo.slice(5);
+let hello = strTwo.slice(0, 5); 
+let world = strTwo.slice(5, 10);
+console.log(world);
+console.log(hello);//hello
+console.log(sliced);
+
+// REPLACE
+let myLove = "I love my country, Kenya!";
+let replaced = myLove.replace("Kenya", "Qatar");
+console.log(replaced);
+//REPLACEALL
+let fruit = "orange, banana, orange, mango, apple, orange";
+let newFruits = fruit.replaceAll("orange", "Guava");
+console.log(newFruits);
+
+//concatenation
+const age = "5" + "4";
+console.log(age);
+console.log("PUP"[3]); // undefined
+console.log("PUP".indexOf("R")); //-1
+
+let userInput = "  TODO@gmail.com";
+let cleanedInput = userInput.trim().toLowerCase();
+console.log(cleanedInput)
