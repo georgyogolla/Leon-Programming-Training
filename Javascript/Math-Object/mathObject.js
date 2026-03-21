@@ -57,16 +57,35 @@ console.log(truncated);
 // The Math.ceil() is a method of the Math standard object that rounds a given number upwards to the next integer.
 //  Take note that for negative numbers this means that the number will get rounded “towards 0” instead of the number of greater absolute value (see examples).
 
-const valueOne = 0.1;
+const valueOne = 2.1;
 const ceiled = Math.ceil(valueOne);
 console.log(ceiled)
 
 // Math Floor
 // Math.floor() is a method of the Math standard object that rounds a given number downwards to the next integer. Take note that for negative numbers this means that the number will get rounded “away from 0” instead of to the number of smaller absolute value since Math.floor() returns the largest integer less than or equal to the given number.
-const numTwo = 23.745;
+const numTwo = 23.14;
 const floored = Math.floor(numTwo);
 console.log(floored);
 
+// The Math.round() 
+// function returns the number rounded to the nearest integer. That is, 3.87 is rounded to 4 and 3.45 is rounded to 3.
+const numThree = 3.57
+const numThreeResult = Math.round(numThree);
+console.log(numThreeResult);
+
+
+// The Math.random()
+// function returns a floating-point, pseudo-random number between 0 (inclusive) and 1 (exclusive).
+
+let randomNumber = Math.random()
+
+console.log(randomNumber)
+
+let rand = Math.floor(Math.random() * 2)
+
+console.log(rand)
+
+// Output: 0.16668531572829082
 
 
 
