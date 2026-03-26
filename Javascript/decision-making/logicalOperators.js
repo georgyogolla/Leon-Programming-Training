@@ -48,3 +48,17 @@ if(passwordTwo.length >= 6 && passwordTwo.indexOf(' ') !== -1){
 } else {
     console.log("VALID PASSWORD!!");
 };
+
+
+// OPERATOR PRECEDENCE
+// NOT (!) has higher precedence than && and ||
+// && has higher precedence than ||
+// !
+// &&
+// | |
+// You can alter this using parens ()
+console.log("==== Operator Precedence ====");
+
+let result = true || false && false;
+console.log(result); // true
+console.log(!true && true); // false
