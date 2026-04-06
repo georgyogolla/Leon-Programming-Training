@@ -12,3 +12,4 @@ footballTeams[2].splice(3, 0, 'Atletico');
 console.log(arsenal);
 console.log(eplTeams);
 console.log(footballTeams);
+
