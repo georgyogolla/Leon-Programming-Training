@@ -37,3 +37,17 @@ for(let i = 50; i >= 0; i -= 10){
 
 // i += 1 => i = i + 1
 // i -=10 => i = i - 10
+
+
+// FOR LOOPS + ARRAYS
+// To loop over an array, start at 0 and continue to the last index (length-1)
+
+const animals = ['lion', 'pig', 'hen', 'goat'];
+for(let i = 0; i < animals.length; i++){
+    console.log(`${i} - ${animals[i]}`);
+};
+
+// 0 - lion
+// 1 - pig
+// 2 - hen
+// 3 - goat
