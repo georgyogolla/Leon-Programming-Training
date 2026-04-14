@@ -18,3 +18,20 @@ while(guess !== targetNum){
     
 }
 console.log(`CORRECT!... Guessed: ${guess} & target was: ${targetNum}`);
+
+
+// BREAK KEYWORD
+let targetNumNew = Math.floor(Math.random() * 10);
+
+let guessNew = Math.floor(Math.random() * 10);
+
+
+while (true){
+    guessNew = Math.floor(Math.random() * 10);
+    if(guessNew === targetNumNew){
+        console.log(`CORRECT! Guessed: ${guessNew} & target was: ${targetNumNew}`);
+        break;
+    } else {
+        console.log(`Guessed ${guessNew}...Incorrect!`);
+    }
+}
