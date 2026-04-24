@@ -12,8 +12,9 @@ const jeopardyWinnings = {
     battleOfTheDecades: 100000,
 };
 
-let total = 0;
+// let total = 0;
 for(let key in jeopardyWinnings){
-    total += jeopardyWinnings[key];
+    // total += jeopardyWinnings[key];
+    console.log(jeopardyWinnings[key]);
 };
-console.log(`Ken Jenning's Total Winnings: $${total}`);
+// console.log(`Ken Jenning's Total Winnings: $${total}`);
