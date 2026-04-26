@@ -60,3 +60,21 @@ function findLargest(x, y){
 }
 
 findLargest(30, 30);
+
+
+// RETURN
+// Built-in methods return
+// values when we call them.
+// We can store those values:
+
+// The return statement ends function
+// execution AND specifies the value to
+// be returned by that function
+function add(x, y){
+    // console.log(x + y); // debugging
+    return x + y; // end of function execeution
+    console.log('hello world'); // will be ignored because of return statement
+};
+
+const res = add(2,3);
+console.log(res);
