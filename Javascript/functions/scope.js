@@ -24,3 +24,16 @@ function accesBirds(){
 };
 console.log(bird)// bird is globally scoped
 accesBirds(); 
+
+// BLOCK SCOPE
+
+let radius = 8;
+if(radius > 0){
+    const PI = 3.142;
+    let circ = 2 * PI * radius;
+    console.log(circ)
+}
+console.log(radius);
+// console.log(PI); PI is not defined
+// console.log(circ); circ is not defined
+// PI & circ are scoped to the BLOCK
