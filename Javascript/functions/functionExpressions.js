@@ -9,3 +9,8 @@ const sum = function (a, b) {
 const res = sum(40, 50);
 console.log(res);
 // console.log(sum(40, 50));
+
+const square = function (num){
+    return num * num;
+};
+console.log(square(2));
